@@ -3,6 +3,12 @@
 \title{Encyclopedia of Mathematics}
 \author{Robin Adams}
 
+\newcommand{\mbA}{\ensuremath{\mathbf{A}}}
+\newcommand{\mbB}{\ensuremath{\mathbf{B}}}
+\newcommand{\mbC}{\ensuremath{\mathbf{C}}}
+
+\newtheorem{props}{Proposition Schema}
+
 \begin{document}
     \maketitle
     \tableofcontents
@@ -14,4 +20,22 @@
     Let there be \emph{sets}.
 
     Let there be a binary relationship between sets called \emph{membership}, denoted $\in$. If $a \in b$ we say $a$ is a \emph{member} or \emph{element} of $b$, or $b$ \emph{contains} $a$, and also write $b \ni a$. If this does not hold, we write $a \notin b$ or $b \not\ni a$.
+
+    \section{Classes}
+
+    We speak informally about \emph{classes}. A \emph{class} is determined by a unary predicate. We write $\{ x : P(x) \}$ or $\{ x \mid P(x) \}$ for the class determined by the predicate $P$.
+
+    Given a class $\mbA := \{ x : P(x) \}$ and a set $a$, we say $a$ is a \emph{member} or \emph{element} of the class $\mbA$ or $\mbA$ \emph{contains} $a$, and write $a \in \mbA$ or $\mbA \ni a$, iff $P(a)$. If this does not hold, we write $a \notin \mbA$ or $\mbA \not\ni a$.
+
+    We say that two classes $\mbA$ and $\mathbf{B}$ are \emph{equal}, and write $\mbA = \mbB$, iff they have exactly the same members. When this does not hold, we write $\mbA \neq \mbB$.
+
+    \begin{props}
+        For any classes $\mbA$, $\mbB$ and $\mbC$:
+        \begin{itemize}
+            \item $\mbA = \mbA$
+            \item If $\mbA = \mbB$ then $\mbB = \mbA$
+            \item If $\mbA = \mbB$ and $\mbB = \mbC$ then $\mbA = \mbC$.
+        \end{itemize}
+    \end{props}
+
 \end{document}
